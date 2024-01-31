@@ -12,7 +12,7 @@ public class Tests
     public void Foo()
     {
 #if NET8_0
-        // required to run. but does note escalate. stop MSDTC service to ensure
+        // required to run. but does not escalate. stop MSDTC service to ensure
         TransactionManager.ImplicitDistributedTransactions = true;
 #endif
         using var scope = new TransactionScope();
